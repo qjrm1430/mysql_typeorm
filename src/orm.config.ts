@@ -3,7 +3,7 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 function ormConfig(): TypeOrmModuleOptions {
   const commonConf = {
     SYNCRONIZE: false,
-    ENTITIES: [__dirname + '/domain/*{.ts,.js}'],
+    ENTITIES: [__dirname + '/entities/*{.ts,.js}'],
     MIGRATIONS: [__dirname + '/migrations/**/*{.ts,.js}'],
     MIGRATIONS_RUN: false,
   };
@@ -15,7 +15,7 @@ function ormConfig(): TypeOrmModuleOptions {
     host: 'localhost',
     port: Number(3306),
     username: 'root',
-    password: 'root',
+    password: 'qhdks00@@',
     logging: true,
     synchronize: commonConf.SYNCRONIZE,
     entities: commonConf.ENTITIES,
